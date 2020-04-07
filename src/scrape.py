@@ -9,7 +9,9 @@ def ScrapeRatings(search_term):
     searchresults = object.search_movie(search_term)
     print("Showing the first 15 results. Choose one movie (type a corresponding number)")
     for x in range(0, 15):
-        print("{} - {} - {} | {}".format(x + 1, str(searchresults[x]).lower().title(), searchresults[x].data["kind"].lower().title(), searchresults[x].data["year"]))
+        try:
+            print("{} - {} - {} | {}".format(x + 1, str(searchresults[x]).lower().title(), searchresults[x].data["kind"].lower().title(), searchresults[x].data["year"]))
+        except: break
 
     number = int(input())
 
