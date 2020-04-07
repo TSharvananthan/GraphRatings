@@ -3,7 +3,7 @@ Scraping the ratings of a given show (from the user) and graphing the ratings by
 
 For example
 
-<img src="images/readme/example.jpg" alt="fuck this dosnt work" id="example" height="400" width="400">
+<img src="images/readme/example.jpg" alt="fuck this dosnt work" id="example" height="650" width="650">
 
 ## Todo
 - [ ] Create scraper that grabs all the ratings from a certain show
