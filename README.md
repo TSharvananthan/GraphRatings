@@ -1,6 +1,10 @@
 # GraphRatings
 Scraping the ratings of a given show (from the user) and graphing the ratings by season and episode
 
+For example
+
+![image]("images/readme/example.jpg")
+
 ## Todo
 - [ ] Create scraper that grabs all the ratings from a certain show
 - [ ] Create a program to graph all the ratings
