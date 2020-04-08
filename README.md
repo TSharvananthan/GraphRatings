@@ -10,7 +10,6 @@ For example
 - [x] Find a way to get all the episodes of one show by season
 - [x] Create scraper that grabs all the ratings from a certain show
 - [x] Implement a searching function that lets the user choose a specific show from the first 15 results
-- ``[ ] Create a dictionary with all the ratings {episode:rating}``
 - [ ] Create a program to graph all the ratings
 - [ ] Make images of all the ratings with corresponding colored backgrounds (make them small images, maybe 100 by 45)
 - [ ] Graph all the ratings but with images corresponding to the ratings

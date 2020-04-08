@@ -1,11 +1,11 @@
 def validateImports():
     try:
-        from bs4 import BeautifulSoup
-        from requests import get
-        from imdb import IMDb
+        import matplotlib
         import numpy
-        import matplotlib.pyplot as plt
-        import pandas as pd
+        import bs4
+        import requests
+        import imdb
+        import pandas
         import argparse
     except:
         from os import system
