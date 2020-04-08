@@ -30,5 +30,5 @@ def ScrapeRatings(id):
 
     for se in total.keys():
         for ep in total[se].keys():
-            ratings.append(round(total[se][ep].data["rating"], 3))
+            ratings.append(round(total[se][ep].data["rating"], 1))
     return (ratings, seasons, episodes)
