@@ -1,4 +1,3 @@
-from src.validateimports import validateImports
 from src.scrape import ScrapeRatings
 from src.graph import Graph
 
@@ -9,8 +8,6 @@ argObject.add_argument("id", type=str, help="What movie are you trying to find?"
 argObject.add_argument("--filepath", type=str, default="output.png", help="Where would you like to save the figure")
 
 argParsed = argObject.parse_args()
-
-validateImports()
 
 data = ScrapeRatings(argParsed.id)
 
