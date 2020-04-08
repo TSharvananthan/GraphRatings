@@ -17,4 +17,4 @@ data = ScrapeRatings(argParsed.id)
 RATINGS = data[0]
 X_VALUES, Y_VALUES = data[1], data[2]
 
-Graph(X_VALUES, Y_VALUES, argParsed.filepath)
+Graph(X_VALUES, Y_VALUES, argParsed.filepath, RATINGS)
