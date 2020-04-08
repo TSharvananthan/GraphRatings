@@ -1,7 +1,0 @@
-matplotlib
-numpy
-bs4
-requests
-imdb
-pandas
-argparse
