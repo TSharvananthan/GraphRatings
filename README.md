@@ -19,10 +19,14 @@ For example
 - [ ] Add the icon that was saved into the figure
 - [ ] Test for issues and fix accordingly
   - [x] Deal with image scaling
-  - [ ] Cover issues regarding padding of axis
-  - [ ] Find a way to make proper axis labels (exact ones)
+  - [x] Find a way to make proper axis labels (exact ones)
+  - [ ] Cover padding and size issues regarding if there are 1-3 seasons
 - [ ] Make proper README
 
 ## UPDATES
 **2:52am April 8th**: Complete most of it. Just need to deal with more issue fixing and improving the formatting of the graphs
                       There is a lot more to this project that still needs to be completed though
+
+**7:32pm April 11th**: FINALLY GOT THE AXIS TO WORK. I lost some motivation to complete this just cause the axis were bugging me
+                       All of a sudden I had this idea to pass dir() on my axis variable and i found this function "set_xticks"
+                       and that was when I realized I did it
