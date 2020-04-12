@@ -12,6 +12,7 @@ def ScrapeRatings(id):
 
     #PART 2: GETTING THE ICON TO INCLUDE IN THE FINAL IMAGE
     urlretrieve(movie.get_fullsizeURL(), "icon.jpg")
+    name = movie["long imdb canonical title"]
 
     #PART 3: UPDATING TO ONLY INCLUDE THE EPISODES OF THE SHOW
     object.update(movie, "episodes")
@@ -28,7 +29,8 @@ def ScrapeRatings(id):
     #PART 6: COLLECTING RATINGS
     ratings = []
 
-    for se in total.keys():
-        for ep in total[se].keys():
+    for se in sorted(total.keys()):
+        for ep in sorted(total[se].keys()):
             ratings.append(round(total[se][ep].data["rating"], 1))
-    return (ratings, seasons, episodes)
+
+    return (ratings, seasons, episodes, total_episode_number, name)
