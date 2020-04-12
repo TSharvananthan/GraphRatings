@@ -1,5 +1,8 @@
 from src.scrape import ScrapeRatings
 from src.graph import Graph
+import warnings
+
+warnings.filterwarnings("ignore", category=RuntimeWarning)
 
 import argparse
 
@@ -13,5 +16,7 @@ data = ScrapeRatings(argParsed.id)
 
 RATINGS = data[0]
 X_VALUES, Y_VALUES = data[1], data[2]
+COORDINATES = data[3]
+MOVIE_NAME = data[4]
 
-Graph(X_VALUES, Y_VALUES, argParsed.filepath, RATINGS)
+Graph(X_VALUES, Y_VALUES, argParsed.filepath, RATINGS, COORDINATES, MOVIE_NAME)
